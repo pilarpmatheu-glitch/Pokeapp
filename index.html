@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090d20">
+  <meta name="description" content="PokeApp: una Pokédex mágica para explorar, guardar y coleccionar Pokémon.">
+  <title>PokeApp | Pokédex Arcana</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="header-logo" href="#" id="link-inicio" aria-label="Ir al inicio">
+      <span class="logo-mark">✦</span><span class="logo-text">POKE<span>APP</span></span>
+    </a>
+    <nav class="header-nav" aria-label="Navegación principal">
+      <a href="#" id="link-inicio-nav">Inicio</a>
+      <a href="#" id="link-pokedex">Pokédex</a>
+      <a href="#" id="link-login">Ingresar</a>
+      <a href="#" id="link-registro">Crear cuenta</a>
+      <a href="#" id="link-perfil">Mi perfil</a>
+      
+    </nav>
+    <form class="header-search" id="form-busqueda" role="search">
+      <input type="search" id="busqueda" placeholder="Buscar Pokémon..." aria-label="Buscar Pokémon">
+      <button type="submit" aria-label="Buscar">⌕</button>
+    </form>
+    <button onclick="mostrarBatalla()">
+    ⚔️ Batalla Pokémon
+</button>
+  </header>
+
+  <main class="main"><div id="app" aria-live="polite"></div></main>
+  <footer class="footer">
+    <p>✦ POKEAPP · Proyecto educativo de desarrollo web ✦</p>
+    <p>Pillado Matheu Pilar</p>
+  </footer>
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>
